@@ -39,6 +39,42 @@
                             </div>
                             <div class="clear"></div>';
             }
+            foreach ($rs as $message){
+                $chat .=    '<div class="single-message '.(($_SESSION['username']==$message->user)?'right':'left').'">
+                                <div>
+                                    <strong>'.$message->user.': </strong><p>'.$message->message.'</p>
+                                </div>
+                                <span>'.date('d/m/Y h:i',strtotime($message->date)).'</span>
+                            </div>
+                            <div class="clear"></div>';
+            }
+            foreach ($rs as $message){
+                $chat .=    '<div class="single-message '.(($_SESSION['username']==$message->user)?'right':'left').'">
+                                <div>
+                                    <strong>'.$message->user.': </strong><p>'.$message->message.'</p>
+                                </div>
+                                <span>'.date('d/m/Y h:i',strtotime($message->date)).'</span>
+                            </div>
+                            <div class="clear"></div>';
+            }
+            foreach ($rs as $message){
+                $chat .=    '<div class="single-message '.(($_SESSION['username']==$message->user)?'right':'left').'">
+                                <div>
+                                    <strong>'.$message->user.': </strong><p>'.$message->message.'</p>
+                                </div>
+                                <span>'.date('d/m/Y h:i',strtotime($message->date)).'</span>
+                            </div>
+                            <div class="clear"></div>';
+            }
+            foreach ($rs as $message){
+                $chat .=    '<div class="single-message '.(($_SESSION['username']==$message->user)?'right':'left').'">
+                                <div>
+                                    <strong>'.$message->user.': </strong><p>'.$message->message.'</p>
+                                </div>
+                                <span>'.date('d/m/Y h:i',strtotime($message->date)).'</span>
+                            </div>
+                            <div class="clear"></div>';
+            }
 
             echo $chat;
 
